@@ -1,0 +1,411 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Custom Barber Shop">
+	<meta name="description" content="Custom Barber Shop offers a premier vintage barber shop experience. Located in Lansing, MI, we offer a full range of grooming services">
+	<meta name="keywords" content="custom, barber, shop, hair, haircut, lansing, michigan, downtown, vintage, shave, trim, hot, lather">
+	<meta name="robots" content="index,follow">
+  <!--[if IE]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<title>Classic Barber Shop - Lansing, MI</title>
+	<link href='http://fonts.googleapis.com/css?family=Anton|PT+Sans+Narrow|Alex+Brush' rel='stylesheet' type='text/css'/>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+	<link rel="icon" type="image/ico" href="favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.gowl.js"></script>
+	<script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/tinynav.min.js"></script>
+	<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+	  $(document).ready(function(){
+	    $("a[rel^='prettyPhoto']").prettyPhoto({
+			theme: 'dark_rounded', 
+			social_tools: false,
+		});
+	  });
+	</script>
+ <script type="text/javascript" charset="utf-8">
+    $(function () {
+
+      // TinyNav.js 1
+      $('#nav').tinyNav({
+		  active:'home'
+      });
+      
+
+    });
+  </script>
+  
+  
+<script type="text/javascript" charset="utf-8">
+$(function(){
+	$("#contactForm").submit(function(e){
+		e.preventDefault();
+		dataString = $("#contactForm").serialize();
+			$.ajax({
+				type: "POST",
+				url: "mail.php",
+				data: dataString,
+				dataType: "json",
+				success: function(data) {
+				if (data.valid == "true")	{
+					$("#contactMsg").html('<span style="color:green;">'+data.msg+'</span>');
+					$('#contactForm')[0].reset();
+				} else
+				{
+					$("#contactMsg").html('<span style="color:red;">'+data.msg+'</span>');
+				} 
+				
+				}
+			});				
+	});
+});
+</script>
+ 
+
+</head>
+
+
+<body>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<section id="home"></section>
+	<div id="wrapper">  <!--#wrapper-->
+			<div id="header"><!--#header-->
+
+				<div id="logo"><!--#logo-->
+                	<img src="images/logo.png" alt="Classic Barber Shop"/>
+                </div><!--/logo-->
+<!--#menu-->
+
+                
+<nav>
+			
+					<ul id="nav">
+
+					<li><a href="#home">Home</a></li>
+
+                    <li ><a href="#prices">Prices</a></li>
+				
+					<li ><a href="#about">Bio</a></li>
+                    
+                    <li ><a href="#gallery">Gallery</a></li>
+                    
+                    <li ><a href="#contacts">Contact</a></li>
+                    </ul>
+                 </nav>   
+<!--#menu-->
+
+		</div><!--/header-->
+        
+<!-- ***************** - Home - ***************** -->	        
+      
+<!--#title-->	<div id="logo2"><!--#logo_for responsive-->
+                	<img src="images/logo.png" alt="Custom Barber Shop"/>
+                </div><!--/logo-->
+		<div id="title">Welcome to Classic Barber Shop!</div>                  
+<!--/title-->	                                      
+
+<!-- ***** - Slider - ***** -->	
+
+<div id="slider-wrap"><!--#slider-wrap-->
+	<div id="slider"><!--#slider-->
+		<div class="slide"><!--.slide-->
+        
+        <p class="slidertext">
+        <!-- ***** - image text gous here - ***** -->	
+        Located in beautiful Downtown Lansing, Classic Barber Shop offers an unparalleled vintage barber experience.
+        </p>
+         <!-- ***** - image gous here - ***** -->	
+        <img src="images/slider/1.jpg" alt="edlae slider 1"/>
+        </div><!--/slide-->
+		<div class="slide"><!--.slide-->
+        <!-- ***** - image 2 gous here - ***** -->
+        <img src="images/slider/2.jpg" alt="eldar slider 2"/>
+        </div><!--/slide-->
+		<div class="slide"><!--.slide--> <p class="slidertext">
+        <!-- ***** - image text gous here - ***** -->
+        Check out some of our awesome decor including vintage barber chairs from the 1900s!
+        </p>
+        <!-- ***** - image 3 gous here - ***** -->
+        <img src="images/slider/3.jpg" alt="eldar slider 3"/>
+        </div><!--/slide-->
+	</div><!--/slider-->
+</div><!--/slider-wrap-->
+  
+<!-- ***** - texts boxes - ***** -->	
+
+       
+<div class="grid_8"><!--.grid8--> 
+   			<div class="txt-title">Quick Info</div><!--/.txt-title-->
+    		<div class="txt">
+810 E. Michigan Ave., Lansing, MI
+<br />
+Phone: (517) 391-9953<br />
+Hours: Mon - Fri 10am-6pm; Sat 10am-4pm<br>
+www.caskeysclassicbarbershop.com
+<br />info@caskeysclassicbarbershop.com<br />
+
+ 			</div><!--/.txt--> 
+</div><!--/grid8-->
+
+<div class="grid_8"><!--.grid8--> 
+   			<div class="txt-title">Today's News:</div><!--/.txt-title--> 
+    		<div class="txt">
+    		
+    		
+    		
+    		<!--BRIAN, EDIT HERE--->
+    		We've updated our hours (now open Mondays)!
+ 			<!--BRIAN, DO NOT GO BELOW THIS LINE--->
+ 			
+ 			
+ 			
+ 			
+ 			</div><!--/.txt--> 
+</div><!--/grid8-->
+
+<div class="grid_8"><!--.grid8--> 
+   			<div class="txt-title">Thanks!</div><!--/.txt-title--> 
+    		<div class="txt">
+    		Thanks for visiting our brand new website! We appreciate you taking the time to consider Classic Barber Shop for your hair and grooming needs!
+ 			</div><!--/.txt--> 
+</div><!--/grid8-->
+
+
+
+<!-- ***** - area with arrow - ***** -->
+
+   <div class="goto"><a href="#next1" ><img src="images/goto.png" alt="go to Prices"/></a></div>
+   <p id="next1"></p>
+
+
+<!-- ***************** - Price List - ***************** -->	 
+<section id="prices"></section>
+       
+<div class="title-home">Price List</div> <!--/.title home-->  
+ 	 
+<div class="grid_center">
+
+    <div class="txtcenter"><!--.txt-->
+                    
+					<h3>Hair Cut</h3>
+					<p class="cartprice">price: $15</p><br>
+					<h3>Buzz Cut</h3>
+					<p class="cartprice">price: $12</p><br>
+					<h3>Beard Trim</h3>
+					<p class="cartprice">price: $7</p><br>
+					<h3>Clean Up "Around the Neck and Ears"</h3>
+					<p class="cartprice">price: $5</p><br>
+					<h3>Hot Towel Shave</h3>
+					<p class="cartprice">price: $20</p><br><br>
+					* We are proud to offer a Military Discount on all of our services.
+
+
+</div><!--/.txt-->
+</div>
+
+
+ 
+ <!-- ***** - area with arrow - ***** -->
+
+   <div class="goto"><a href="#next2" ><img src="images/goto.png" alt="go to Bio"/></a></div>
+   <p id="next2"></p>
+
+      
+    <section id="about"></section>  
+ <!-- ***************** - Bio - ***************** -->	      
+ <div class="title-home">Bio</div><!--/.title-home-->
+ <div id="chiefdiv"><!--#chiefdiv-->
+ <!--.txt-->
+ <div class="txt">
+ <!-- image gous here--><img class="chief" src="images/brian.png" alt="Brian Caskey"/>
+ <!-- name gous here-->
+ <h1>Classic Barber Shop</h1>
+  <!-- text gous here-->
+ <p style="margin-top:-25px;">When you first walk into Classic Barber Shop, you will immediately recognize that you are not in an average barber shop. The setting is relaxed featuring Barber chairs from the early 1900's as well as modern touches such as large flat-screen television and WiFi.</p>
+<p>
+For a price comparable to a local chain’s haircut, you will be greeted by a master barber who will take the time to listen to you carefully and determine your exact grooming needs. All haircuts are finished with hot lather shave around the neck and ears at your discretion.
+<p>
+E-mail us below or call us at <b>(517) 391-9953</b> to make an appointment!
+</div><!--/.txt-->
+
+
+
+ </div><!--/#chiefdiv-->
+ 
+ 
+<!-- ***** - area with arrow - ***** -->
+       
+   <div class="goto"><a href="#next3" ><img src="images/goto.png" alt="go to Gallery"/></a></div>
+   <p id="next3"></p>
+
+
+
+<!-- ***************** - Gallery - ***************** -->	        
+       
+           <section id="gallery"></section>
+           
+            <div class="title-home">Gallery</div><!--/.title-home-->
+           <div class="index-blocks"><!--.index-blocks-->
+
+		   <div class="gallery">
+<h1>Classic Barber Shop</h1>
+<a href="images/gallery/1.jpg" rel="prettyPhoto"><img src="images/gallery/1_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/2.jpg" rel="prettyPhoto"><img src="images/gallery/2_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/3.jpg" rel="prettyPhoto"><img src="images/gallery/3_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/4.jpg" rel="prettyPhoto"><img src="images/gallery/4_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/5.jpg" rel="prettyPhoto"><img src="images/gallery/5_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/6.jpg" rel="prettyPhoto"><img src="images/gallery/6_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/7.jpg" rel="prettyPhoto"><img src="images/gallery/7_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/8.jpg" rel="prettyPhoto"><img src="images/gallery/8_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/shop/1.jpg" rel="prettyPhoto"><img src="images/gallery/shop/1_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/shop/2.jpg" rel="prettyPhoto"><img src="images/gallery/shop/2_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/shop/3.jpg" rel="prettyPhoto"><img src="images/gallery/shop/3_1.jpg" class="img1" alt="" /></a>
+<br><br>
+<h1> Classic Cuts</h1>
+<a href="images/gallery/cuts/7.jpg" rel="prettyPhoto"><img src="images/gallery/cuts/7_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/cuts/12.jpg" rel="prettyPhoto"><img src="images/gallery/cuts/12_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/cuts/4.jpg" rel="prettyPhoto"><img src="images/gallery/cuts/4_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/cuts/10.jpg" rel="prettyPhoto"><img src="images/gallery/cuts/10_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/cuts/3.jpg" rel="prettyPhoto"><img src="images/gallery/cuts/3_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/cuts/18.jpg" rel="prettyPhoto"><img src="images/gallery/cuts/18_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/cuts/1.jpg" rel="prettyPhoto"><img src="images/gallery/cuts/1_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/cuts/14.jpg" rel="prettyPhoto"><img src="images/gallery/cuts/14_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/cuts/8.jpg" rel="prettyPhoto"><img src="images/gallery/cuts/8_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/cuts/2.jpg" rel="prettyPhoto"><img src="images/gallery/cuts/2_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/cuts/5.jpg" rel="prettyPhoto"><img src="images/gallery/cuts/5_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/cuts/6.jpg" rel="prettyPhoto"><img src="images/gallery/cuts/6_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/cuts/11.jpg" rel="prettyPhoto"><img src="images/gallery/cuts/11_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/cuts/17.jpg" rel="prettyPhoto"><img src="images/gallery/cuts/17_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/cuts/9.jpg" rel="prettyPhoto"><img src="images/gallery/cuts/9_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/cuts/13.jpg" rel="prettyPhoto"><img src="images/gallery/cuts/13_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/cuts/15.jpg" rel="prettyPhoto"><img src="images/gallery/cuts/15_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/cuts/16.jpg" rel="prettyPhoto"><img src="images/gallery/cuts/16_1.jpg" class="img1" alt="" /></a>
+
+<br><br>
+<h1>Classic Line Work</h1>
+<a href="images/gallery/line/24.jpg" rel="prettyPhoto"><img src="images/gallery/line/24_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/line/22.jpg" rel="prettyPhoto"><img src="images/gallery/line/22_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/line/19.jpg" rel="prettyPhoto"><img src="images/gallery/line/19_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/line/2.jpg" rel="prettyPhoto"><img src="images/gallery/line/2_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/line/26.jpg" rel="prettyPhoto"><img src="images/gallery/line/26_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/line/27.jpg" rel="prettyPhoto"><img src="images/gallery/line/27_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/line/15.jpg" rel="prettyPhoto"><img src="images/gallery/line/15_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/line/4.jpg" rel="prettyPhoto"><img src="images/gallery/line/4_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/line/6.jpg" rel="prettyPhoto"><img src="images/gallery/line/6_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/line/7.jpg" rel="prettyPhoto"><img src="images/gallery/line/7_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/line/8.jpg" rel="prettyPhoto"><img src="images/gallery/line/8_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/line/9.jpg" rel="prettyPhoto"><img src="images/gallery/line/9_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/line/10.jpg" rel="prettyPhoto"><img src="images/gallery/line/10_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/line/11.jpg" rel="prettyPhoto"><img src="images/gallery/line/11_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/line/20.jpg" rel="prettyPhoto"><img src="images/gallery/line/20_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/line/29.jpg" rel="prettyPhoto"><img src="images/gallery/line/29_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/line/12.jpg" rel="prettyPhoto"><img src="images/gallery/line/12_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/line/14.jpg" rel="prettyPhoto"><img src="images/gallery/line/14_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/line/16.jpg" rel="prettyPhoto"><img src="images/gallery/line/16_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/line/18.jpg" rel="prettyPhoto"><img src="images/gallery/line/18_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/line/17.jpg" rel="prettyPhoto"><img src="images/gallery/line/17_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/line/1.jpg" rel="prettyPhoto"><img src="images/gallery/line/1_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/line/13.jpg" rel="prettyPhoto"><img src="images/gallery/line/13_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/line/21.jpg" rel="prettyPhoto"><img src="images/gallery/line/21_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/line/25.jpg" rel="prettyPhoto"><img src="images/gallery/line/25_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/line/28.jpg" rel="prettyPhoto"><img src="images/gallery/line/28_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/line/3.jpg" rel="prettyPhoto"><img src="images/gallery/line/3_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/line/5.jpg" rel="prettyPhoto"><img src="images/gallery/line/5_1.jpg" class="img1" alt="" /></a>
+<a href="images/gallery/line/23.jpg" rel="prettyPhoto"><img src="images/gallery/line/23_1.jpg" class="img1" alt="" /></a>
+
+
+
+
+
+<br>
+
+</div>
+
+  </div><!--/.index-blocks-->       
+  
+
+  
+   <div class="goto"><a href="#next4" ><img src="images/goto.png" alt="go to Contact"/></a></div>
+   <p id="next4"></p>
+
+
+
+<!-- ***************** - Contact - ***************** -->          
+ 
+ <section id="contacts"></section>
+
+	
+             <div class="title-home">Contact Us</div>
+             
+             
+             
+<div class="index-blocks"><!--.index-blocks--> 
+<div class="grid_8"><!--.grid_8--> 
+    <div class="txt-title">Address:</div><!--/.txt-title-->
+<!--.txt-->
+<div class="txt">810 E. Michigan Ave., Lansing, MI
+<br />
+Phone: (517) 391-9953<br />
+www.caskeysclassicbarbershop.com
+<br />info@caskeysclassicbarbershop.com<br />
+Monday - Friday: 10am - 6pm<br>
+Saturday: 10am - 4pm<br>
+
+</div><!--/.txt-->
+
+<div class="txt-title">E-Mail Us!</div><!--/.txt-title-->
+<!--.txt--><div class="txt">
+
+<form id="contactForm">
+  <label for="first_name">First Name *</label>
+  <input  type="text" name="first_name" maxlength="50" size="30">
+  <label for="last_name">Last Name *</label>
+  <input  type="text" name="last_name" maxlength="50" size="30">
+  <label for="email">Email Address *</label>
+  <input  type="text" name="email" maxlength="80" size="30">
+  <label for="telephone">Telephone Number</label>
+  <input  type="text" name="telephone" maxlength="30" size="30">
+  <label for="comments">Message *</label>
+  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+  <input type="submit" value="Submit">
+
+</form>
+<div id="contactMsg"></div>
+</div><!--/.txt-->
+
+<div class="txt-title">Find Us on Facebook:</div><!--/.txt-title-->
+<!-- ***** - social icons - ***** -->
+<div class="fb-like-box" data-href="https://www.facebook.com/caskeysclassicbarbershop" data-width="292" data-colorscheme="dark" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+  <br />
+ </div><!--/.social-->
+ </div><!--/.grid_8-->
+                                         
+<div class="grid_map"><!--.grid_map-->  
+<div class="txt-title">Find Us:</div><!--/.txt-title-->
+<div class="txt"><!--.txt-->
+ <img src="images/map.png"><br />
+ </div><!--/.txt-->
+</div><!--/.grid_map-->
+</div><!--/.index-blocks-->
+ 
+<!-- ***** - area with arrow - ***** -->
+
+<div id="goup"><br /><a  href="#home"><img src="images/goup.png" alt="Go to Home"/></a><br /></div>  
+
+<!-- ***** - copyrights - ***** -->
+ <div id="credits">Copyright Classic Barber Shop 2013</div>
+</div><!--/#wrapper-->
+</body>
+</html>
